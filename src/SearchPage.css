@@ -1,0 +1,54 @@
+/* SearchPage.css */
+.SearchPage {
+    text-align: center;
+  }
+  
+  .SearchPage-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .SearchPage-logo {
+      animation: SearchPage-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .SearchPage-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .SearchPage-link {
+    color: #61dafb;
+  }
+  
+  @keyframes SearchPage-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .SearchPage-label {
+    text-align: left;
+    display: block;
+  }
+  
+  .SearchPage-input {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  }
+  
