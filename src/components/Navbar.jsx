@@ -8,7 +8,7 @@ export default function Navbar() {
             <Spacer />
 
             <HStack spacing="20px">
-                <NavLink to="/" style={{ color: 'white' }}>
+                <NavLink to="about" style={{ color: 'white' }}>
                     About
                 </NavLink>
             </HStack>

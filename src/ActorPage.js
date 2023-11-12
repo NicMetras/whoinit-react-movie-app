@@ -3,7 +3,7 @@ import SearchBar from "./components/SearchBar";
 
 import axios from 'axios';
 import './App.css';
-import { SimpleGrid, Card, CardBody, Image, Stack, Heading, Text, useToast, Flex, Box, CloseButton, HStack } from '@chakra-ui/react';
+import { SimpleGrid, Card, CardBody, Image, Stack, Heading, Text, useToast, Flex, Box, CloseButton } from '@chakra-ui/react';
 
 
 const ActorPage = () => {
@@ -84,7 +84,7 @@ const ActorPage = () => {
         <SearchBar placeholder="Enter an Actor's name.." handleSearch={handleSearch} />
         <SimpleGrid spacing={10} minChildWidth="200px">
         {credits && credits.map(movie => (
-          <Card key={movie.id}>
+          <Card  boxShadow='2xl' key={movie.id}>
             <CardBody>
               <Image
                 src={'https://image.tmdb.org/t/p/original/' + movie.poster_path}

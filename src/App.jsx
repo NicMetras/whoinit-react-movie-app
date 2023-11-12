@@ -4,6 +4,7 @@ import RootLayout from './layouts/RootLayout';
 import SearchPage from './SearchPage';
 import ActorPage from './ActorPage';
 import CastPage from './CastPage';
+import AboutPage from './AboutPage';
 import { ChakraProvider } from '@chakra-ui/react';
 import Navbar from './components/Navbar';
 import "./App.css";
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
       <Route index element={<SearchPage />} />
       <Route path="actor" element={<ActorPage />} />
       <Route path="cast" element={<CastPage />} />
+      <Route path="about" element={<AboutPage /> }/>
     </Route>
   )
 )

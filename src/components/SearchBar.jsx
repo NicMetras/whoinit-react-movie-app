@@ -1,3 +1,4 @@
+// SearchBar.js
 import React, { useState } from "react";
 import { Box, Button, FormControl, Input, Stack } from '@chakra-ui/react';
 
