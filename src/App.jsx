@@ -8,6 +8,8 @@ import AboutPage from './AboutPage';
 import { ChakraProvider } from '@chakra-ui/react';
 import Navbar from './components/Navbar';
 import "./App.css";
+import {Helmet} from "react-helmet";
+
 
 // router and routes
 const router = createBrowserRouter(
@@ -25,6 +27,10 @@ function App() {
   return (
     <ChakraProvider>
     <div className="App">
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Whoinit App</title>
+    </Helmet>
     <RouterProvider router={router} />
     </div>
     </ChakraProvider>
